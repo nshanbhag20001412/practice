@@ -1,19 +1,24 @@
 const inputText=document.querySelector("#inputText");
 const sizeBtns=document.querySelectorAll(".sizeBtn");
 
+var fontSize = parseFloat(window.getComputedStyle(inputText, null).getPropertyValue('font-size')); 
+
 if(sizeBtns)
 {
 sizeBtns[0].addEventListener("click",fontBig);
-sizeBtns[0].addEventListener("click",fontSmall);
+sizeBtns[1].addEventListener("click",fontSmall);
 }
 
 function fontBig(){
-    curSize = parseInt(inputText.css('font-size'))
-console.log(curSize);
+
+    fontSize++;
+
+
 
 }
 
 function fontSmall(){
 
-    font--;
+    fontSize--;
+    console.log(fontSize);
 }
