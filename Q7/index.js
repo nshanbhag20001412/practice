@@ -11,8 +11,9 @@ function clickEventHandler(){
     fetch(callAPI(inputContent))
     .then(response => response.json())
     .then(json => {
+ nehashanbhag-branchpractice
         var receivedText = json.contents.;
-        display.innerText = receivedText; // output
+
        })
 }
 
