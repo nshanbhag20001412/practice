@@ -29,7 +29,7 @@ var readlineSync = require('readline-sync');
      preFinal:"",
      final:"",
    },
-      { name:"",
+   { name:"",
      unitTest:"",
      preFinal:"",
      final:"",

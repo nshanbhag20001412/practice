@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.btnCopy{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    border-style: none;
+    background-color:#0f1724 ;
+    border-radius:0.5rem ;
+    padding: 0.5rem 1rem;
+}
+
+.link{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none; 
+    border-radius: 0.5rem;
+}

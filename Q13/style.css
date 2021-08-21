@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap');
+
+html{
+
+    font-family: 'STIX Two Text', serif;
+}
+
+:root{
+
+    --primary-color:teal;
+    --secondary-color:crimson;
+}
+
+h1{
+    color:var(--primary-color);
+}
+
+h2{
+    color:var(--secondary-color);
+}
+
+button{
+
+    border-style:none;
+    padding:4px;
+    font-family: 'STIX Two Text', serif;
+}
+
+.button-primary{
+
+    background-color: var(--primary-color);
+    color:white;
+}
+
+.button-secondary{
+
+    background-color: var(--secondary-color);
+    color:white;
+}
