@@ -1,5 +1,6 @@
 const inputText=document.querySelector("#inputText");
 const sizeBtns=document.querySelectorAll(".sizeBtn");
+var display=document.querySelector(".display");
 
 
 
@@ -13,7 +14,10 @@ function fontBig(){
 
   var fontSize=parseInt(window.getComputedStyle(inputText).getPropertyValue('font-size'));
   fontSize=fontSize+2;
+  input=inputText.value
   inputText.style.fontSize=fontSize + 'px';
+  display.style.fontSize=fontSize + 'px';
+  display.innerText=input;
 }
 
 function fontSmall(){

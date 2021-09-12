@@ -34,6 +34,7 @@ function checkPassword(){
 
            display.innerHTML="Password is good!";
            inputText.style.backgroundColor="green";
+           
         }
         else{
 
