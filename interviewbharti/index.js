@@ -7,8 +7,6 @@ fetch("https://jsonplaceholder.typicode.com/todos")
             
         var titleText=array.title;
          if(array.completed===false)
-         style.titleText.color='grey';
-
-        content.innerText=`${content.innerText} \n Tittle:${titleText} \n Flag:${array.completed}`;
+        content.innerHTML+=`\n <p style="color:grey">Tittle:${titleText}</p>  \n Flag:${array.completed}`;
     })
 })
