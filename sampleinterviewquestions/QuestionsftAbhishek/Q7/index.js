@@ -16,7 +16,10 @@ btnToggle.addEventListener("click",()=>{
        passwordInput.setAttribute("type","password")
 
 })
-
+passwordInput.addEventListener("focus", (e) => {
+   e.target.style.outline = "none";  
+ });
+ 
 passwordInput.addEventListener("input", changeInputBorder)
 
 
