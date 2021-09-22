@@ -27,3 +27,4 @@ function fontSmall(){
   console.log(fontSize);
   inputText.style.fontSize=`${fontSize}px`;
 }
+

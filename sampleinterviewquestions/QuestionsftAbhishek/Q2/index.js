@@ -8,7 +8,13 @@ fetch(url)
                     
               if(array.dob.age>45){
 
-                eligibleUser.innerHTML+=`<p style="color:green"> ${array.name.first}</p>`
+                // eligibleUser.innerHTML+=`<p style="color:green"> ${array.name.first}</p>`
+
+                eligibleUser.innerHTML+=` <h1 style="color:${array.dob.age > 45 ? 'green' : ''}">${array.name.first}</h1>
+                <p>${array.dob.age}</p>`
               }
+              else
+              eligibleUser.innerHTML+=` <p> ${array.name.first}</p>`
+
    
 })})
