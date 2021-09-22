@@ -2,11 +2,13 @@ var passwordInput=document.querySelector("#password-input");
 var btnToggle=document.querySelector("#toggle");
 
 function changeInputBorder(){
+   e.target.style.outline = "none";
 
  if(passwordInput.value.length>10)
-   passwordInput.style.borderColor="green"
+ e.target.style.outline="green"
  else
-   passwordInput.style.borderColor="black"
+ e.target.style.outline ="black"
+ 
 }
 btnToggle.addEventListener("click",()=>{
 
@@ -17,7 +19,7 @@ btnToggle.addEventListener("click",()=>{
 
 })
 
-passwordInput.addEventListener("input", changeInputBorder)
+passwordInput.addEventListener("focus", changeInputBorder)
 
 
 
